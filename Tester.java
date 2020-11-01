@@ -15,6 +15,16 @@ public class Tester{
       System.out.println("the distance between point "+i+" and point "+(i+1)+" is "+points[i].distanceTo(points[i+1]));
     }
 
-    //
+    //equals() tester
+    for(int i=0; i<4;i++){
+      if(points[i].equals(points[i+1])){
+      System.out.println("Point "+i+" and point "+(i+1)+" is equal.");
+      }
+      else{
+      System.out.println("Point "+i+" and point "+(i+1)+" is not equal.");
+      }
+    }
+
+    
   }
 }
