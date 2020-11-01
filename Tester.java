@@ -37,6 +37,13 @@ public class Tester{
       System.out.println(triangles[i]);
     }
 
+    //accesors test
+    for(int i=0;i<5;i++){
+      System.out.println("the perimeter of triangle "+i+" is "+triangles[i].getPerimeter());
+      System.out.println("the area of triangle "+i+" is "+triangles[i].getArea());
+      System.out.println("Triangle "+i+" is "+triangles[i].classify());
+    }
+
     //
 
 
