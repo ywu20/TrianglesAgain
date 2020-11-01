@@ -1,5 +1,6 @@
 public class Tester{
   public static void main(String[] args){
+    /*
     Point[] points = new Point[5];
 
     //construct points
@@ -51,8 +52,6 @@ public class Tester{
       triangles[i].setVertex(i,points[i]);
       System.out.println(triangles[i]+"\n");
     }
-
-
-
+*/
   }
 }
