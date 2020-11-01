@@ -25,9 +25,9 @@ public class Triangle{
   }
 
   public String classify(){
-    double d1 = v1.distanceTo(v2);
-    double d2 = v2.distanceTo(v3);
-    double d3=  v3.distanceTo(v1);
+    double d1 = Math.round(v1.distanceTo(v2)*10000)/10000;
+    double d2 = Math.round(v2.distanceTo(v3)*10000)/10000;;
+    double d3=  Math.round(v3.distanceTo(v1)*10000)/10000;;
 
     if (d1==d2 && d1==d3){
       return "equilateral";
@@ -44,4 +44,5 @@ public class Triangle{
 
   }
   */
+
 }
