@@ -9,6 +9,7 @@ public class Tester{
       System.out.println(points[i]);
     }
     points[4]=points[3];
+    System.out.println(points[4]);
 
     //distanceTo() tester
     for(int i=0; i<4;i++){
@@ -28,12 +29,12 @@ public class Tester{
     //Triangle constructor test
     System.out.println("triangles being tested:");
     Triangle[] triangles = new Triangle[5];
-    for (int i=0; i<2;i++){
-      triangles[i] = new Triangle(points[i],points[i+1], points[i+2]);
+    for (int i=0; i<3;i++){
+      triangles[i]=new Triangle(Math.random()*10, Math.random()*5, Math.random()*2, Math.random()*-2, Math.random()*-4, Math.random()*3);
       System.out.println(triangles[i]);
     }
-    for(int i=2; i<5;i++){
-      triangles[i]=new Triangle(Math.random()*10, Math.random()*5, Math.random()*2, Math.random()*-2, Math.random()*-4, Math.random()*3);
+    for(int i=3; i<5;i++){
+      triangles[i] = new Triangle(points[i-3],points[i-2], points[i-1]);
       System.out.println(triangles[i]);
     }
 
@@ -44,7 +45,13 @@ public class Tester{
       System.out.println("Triangle "+i+" is "+triangles[i].classify());
     }
 
-    //
+    //setVertex() test
+    for(int i=0;i<5;i++){
+      System.out.println(triangles[i]);
+      triangles[i].setVertex(i,points[i]);
+      System.out.println(triangles[i]+"\n");
+    }
+
 
 
   }
